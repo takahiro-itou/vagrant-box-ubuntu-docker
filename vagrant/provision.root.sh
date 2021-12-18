@@ -24,10 +24,16 @@ sudo  apt  install -y  qemu
 sudo  apt  install -y  nasm
 
 # Docker
+sig_file='/usr/share/keyrings/docker-archive-keyring.gpg'
+docker_url='https://download.docker.com/linux/ubuntu'
+
 sudo  apt  install -y  ca-certificates  curl  gnupg
-curl  -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable" \
-    | sudo tee /etc/apt/sources.list.d/docker.list
+curl  -fsSL  https://download.docker.com/linux/ubuntu/gpg   \
+    | sudo  gpg  --dearmor  -o ${sig_file}
+curl  -fsSL  ${docker_url}/gpg | sudo gpg --dearmor -o ${sig_file}
+echo "deb [arch=amd64 signed-by=${sig_file}] ${docker_url} focal stable"    \
+    | sudo  tee  /etc/apt/sources.list.d/docker.list
+
 sudo  apt  update
 sudo  apt  install -y  docker-ce
 
