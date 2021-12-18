@@ -29,7 +29,7 @@ docker_url='https://download.docker.com/linux/ubuntu'
 
 sudo  apt  install -y  ca-certificates  curl  gnupg
 curl  -fsSL  https://download.docker.com/linux/ubuntu/gpg   \
-    | sudo  gpg  --dearmor  -o ${sig_file}
+    | sudo  gpg  --no-tty  --dearmor  -o ${sig_file}
 curl  -fsSL  ${docker_url}/gpg | sudo gpg --dearmor -o ${sig_file}
 echo "deb [arch=amd64 signed-by=${sig_file}] ${docker_url} focal stable"    \
     | sudo  tee  /etc/apt/sources.list.d/docker.list
