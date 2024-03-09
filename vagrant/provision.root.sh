@@ -9,13 +9,35 @@ sudo  apt  update
 export DEBIAN_FRONTEND=noninteractive
 sudo  -E  apt  upgrade -y
 
-sudo  apt  install -y  build-essential                          \
-    cmake  doxygen  emacs  git  mercurial                       \
-    autoconf  automake   clang  gcc  g++                        \
-    libcppunit-dev  libtool  ncurses-dev                        \
-    make  time  sudo                                            \
-    language-pack-ja-base  language-pack-ja                     \
-    fcitx  fcitx-mozc  ibus-mozc
+sudo  apt  install -y           \
+    autoconf                    \
+    automake                    \
+    build-essential             \
+    clang                       \
+    cmake                       \
+    doxygen                     \
+    emacs                       \
+    g++                         \
+    gcc                         \
+    git                         \
+    libcppunit-dev              \
+    libtool                     \
+    make                        \
+    mercurial                   \
+    ncurses-dev                 \
+    ruby                        \
+    ruby-bundler                \
+    ruby-dev                    \
+    sudo                        \
+    time                        \
+                                \
+    language-pack-ja-base       \
+    language-pack-ja            \
+                                \
+    fcitx                       \
+    fcitx-mozc                  \
+    ibus-mozc                   \
+    ;
 
 sudo  apt  install -y  ubuntu-desktop
 sudo  apt  install -y  qemu
