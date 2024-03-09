@@ -25,6 +25,9 @@ sudo  apt  install -y           \
     make                        \
     mercurial                   \
     ncurses-dev                 \
+    ruby                        \
+    ruby-bundler                \
+    ruby-dev                    \
     sudo                        \
     time                        \
                                 \
