@@ -7,8 +7,8 @@
 ### クローン
 
 ```bash
-git clone https://gitlab.com/takahiro-itou/vagrant-box-ubuntu-gui.git
-cd  vagrant-box-ubuntu-gui
+git clone git@gitlab.com:takahiro-itou/vagrant-box-ubuntu-docker.git
+cd  vagrant-box-ubuntu-docker
 ```
 ### ボックス作成
 
@@ -19,11 +19,10 @@ cd  vagrant-box-ubuntu-gui
 ### 作成したボックスを登録する。
 
 ```bash
-vagrant box add  --name <yourname>/ubuntu-bionic64-gui  ubuntu-gui.box
+vagrant box add  --name <yourname>/ubuntu-jammy64-docker  ubuntu-jammy64-docker.v1.1.1.box
 ```
 
 ## 作成済みのボックスをダウンロードして使う
 
-takahiro-itou/ubuntu-bionic64-gui
-- https://app.vagrantup.com/takahiro-itou/boxes/ubuntu-bionic64-gui
-
+takahiro-itou/ubuntu-jammy64-docker
+- https://app.vagrantup.com/takahiro-itou/boxes/ubuntu-jammy64-docker
