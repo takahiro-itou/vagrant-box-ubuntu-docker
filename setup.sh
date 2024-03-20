@@ -1,8 +1,8 @@
 #! /bin/bash  -xue
 
-box_version='v1.1.1'
-box_file="ubuntu-jammy-docker.${box_version}.box"
 box_name='ubuntu-jammy64-docker'
+box_version='v1.1.1'
+box_file="ubuntu-jammy64-docker.${box_version}.box"
 
 # Account Name of Vagrant Cloud.
 vc_user='takahiro-itou'
