@@ -25,7 +25,6 @@ sudo  apt  install -y           \
     make                        \
     mercurial                   \
     ncurses-dev                 \
-    ntp                         \
     ruby                        \
     ruby-bundler                \
     ruby-dev                    \
