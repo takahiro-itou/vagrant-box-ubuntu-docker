@@ -1,6 +1,6 @@
 # vagrant-box-ubuntu-gui
 
-デスクトップパッケージをインストールした Ubuntu 18.04 (bionic) 64 bit
+デスクトップパッケージをインストールした Ubuntu 22.04 (jammy)  64 bit
 
 ## ボックスを自前で作成する
 
@@ -19,7 +19,7 @@ cd  vagrant-box-ubuntu-docker
 ### 作成したボックスを登録する。
 
 ```bash
-vagrant box add  --name <yourname>/ubuntu-jammy64-docker  ubuntu-jammy64-docker.v1.1.1.box
+vagrant box add  --name <yourname>/ubuntu-jammy64-docker  ubuntu-jammy64-docker.v1.1.2.box
 ```
 
 ## 作成済みのボックスをダウンロードして使う
