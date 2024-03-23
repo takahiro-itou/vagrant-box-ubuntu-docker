@@ -30,6 +30,7 @@ sudo  apt  install -y           \
     ruby-bundler                \
     ruby-dev                    \
     sudo                        \
+    systemd-timesyncd           \
     time                        \
                                 \
     language-pack-ja-base       \
